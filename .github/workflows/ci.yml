@@ -19,7 +19,8 @@ jobs:
       - name: Install pytest
         run: pip install pytest
 
-      - name: Run tests
-        run: |
-          export PYTHONPATH=.
-          pytest -q
+     - name: Run tests
+       run: |
+         export PYTHONPATH=.
+         pytest test_app.py
+
